@@ -1,0 +1,133 @@
+/* Global Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff0055;
+}
+
+/* Hero Section */
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url('concert.png') no-repeat center / cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  margin: 0;
+  color: #ff0055;
+  text-shadow: 0 0 15px rgba(255,0,85,0.7);
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #ff0055;
+}
+
+/* Highlight Section */
+.highlight {
+  background: linear-gradient(120deg, #1f0036, #3a006f);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.highlight h2 {
+  color: #ff66aa;
+}
+
+.highlight button {
+  padding: 12px 25px;
+  font-size: 1em;
+  background: linear-gradient(45deg, #ff0055, #ff66aa);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0055;
+}
+
+/* News Section */
+.news {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+}
+
+.news-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+}
